@@ -2,30 +2,61 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Andrés Pineda">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Taller BackEnd</title>
 </head>
 <body>
-    <div class="calculator">
-        <h2>Calculadora</h2>
-        <form action="calculate.php" method="post">
-            <label for="num1">Número 1:</label>
-            <input type="number" name="num1" required>
+    <header>
+         <!--se cambia y imagen y descripcion-->
+        <img class="illus" src="img/figure2.jpg" alt="dos jovenes">
+        <div class="header-contain">
+            <div class="title">
+                <h2>Backend basado en proyectos.</h2>
+                <h1>Solución Taller Backend - Unidad 10</h1>
+                <p>Evaluar los conocimientos de PHP, sentencias, variables, formularios, envío de datos, métodos 
+                    POST y GET, entre otros.
+                </p>
+                <a href="#section-respuestas">Ver Solución</a>
+            </div>
+        </div>
+    </header>
+    <section id="section-description">
+        <div class="illustration">
+            <!--se agrega descripcion alt y se cambia la imagen-->
+            <img src="img/seccion2.jpg" alt="computador y herramientas">
+        </div>
+        <div class="descript">
+            <h2>Descripción de la actividad</h2>
+            <p>Según lo visto en el módulo de Backend basado en proyectos, conteste las siguientes preguntas 
+                de opción múltiple, en donde se evidencien los conocimientos de PHP, sentencias, variables, 
+                formularios, envío de datos, métodos POST y GET, entre otros.</p>
+        </div>
+    </section>
 
-            <label for="num2">Número 2:</label>
-            <input type="number" name="num2" required>
-
-            <label for="operation">Operación:</label>
-            <select name="operation" required>
-                <option value="SUMA">Suma</option>
-                <option value="RESTA">Resta</option>
-                <option value="MULTIPLICACION">Multiplicación</option>
-                <option value="DIVISION">División</option>
-            </select>
-
-            <button type="submit">Calcular</button>
-        </form>
-    </div>
+    <section id="section-respuestas">
+        <div class="respuestas">
+            <h2>Solución del taller</h2>
+            <div class="ind">
+                <a href="calculadora.php">1. Calculadora</a>
+            </div>
+            <div class="ind">
+                <a href="mayor_menor.php">2. Verificar mayor y menor de edad</a>
+            </div>
+            <div class="ind">
+                <a href="method_get.php">3. Envío de datos GET</a>
+            </div>
+            <div class="ind">
+                <a href="edad_exacta.php">4. Calculadora exacta de edad</a>
+            </div>
+            
+        </div>
+        <div class="illustration">
+            <!--se agrega descripcion alt y se cambia la imagen-->
+            <img src="img/seccion3.jpg" alt="hombre sentado">
+        </div>
+    </section>
 </body>
 </html>
